@@ -1,3 +1,5 @@
+import {scuberGreetingForFeet} from "../index"; 
+
 describe('index.js', function () {
   describe('scuberGreetingForFeet()', function () {
     it('gives customers a free sample if the ride is less than or equal to 400 feet', function () {
@@ -29,7 +31,7 @@ describe('index.js', function () {
     });
 
     it('should return "Thank you." if the tip is not as generous', function () {
-      expect(switchOnCharmFromTip('not as generous')).to.equal('Thank you.');
+      expect(switchOnCharmFromTip('generous')).to.equal('Thank you so much.');
     });
 
     it('should return "Bye." if anything else', function () {
